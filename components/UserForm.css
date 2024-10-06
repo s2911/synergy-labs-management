@@ -1,0 +1,92 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Cover full screen */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it's on top */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  padding-top: 20px; /* Space from the top */
+}
+
+.user-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Set a width for the form */
+  max-height: 80vh; /* Max height of the form */
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+.user-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; /* Center align the title */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between fields */
+}
+
+.user-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  display: block; /* Make labels block elements */
+}
+
+.user-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%; /* Full width inputs */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.user-form input::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.user-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.form-footer {
+  display: flex; /* Use flexbox for footer alignment */
+  justify-content: space-between; /* Space between buttons */
+  margin-top: 20px; /* Space above buttons */
+}
+
+.user-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1; /* Ensure both buttons take equal space */
+  margin: 0 5px; /* Small margin between buttons */
+}
+
+.exit-button {
+  background-color: #dc3545; /* Red color for exit button */
+}
+
+.exit-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.user-form button[type="submit"] {
+  background-color: #28a745; /* Green color for submit button */
+}
+
+.user-form button[type="submit"]:hover {
+  background-color: #218838; /* Darker green on hover */
+}
